@@ -19,7 +19,7 @@
         @section('styles')
             body {
                 padding-top: 60px;
-                background-image: url(/img/bg.jpg); 
+                background-image: url({{ URL::asset('img/bg.jpg'); }});
                 background-size: cover;
             }
         @show
@@ -42,8 +42,7 @@
  <!-- Menu sebelah kanan -->
 
            <a class="navbar-brand"  href="/" >
-        <img  
-             src="/icon/e-materi.png">
+       {{ HTML::image('/icon/e-materi.png'); }}
     </a>
 
         </div>
