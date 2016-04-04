@@ -39,7 +39,7 @@
           </button>
  <!-- Menu sebelah kanan -->
 
-           <a class="navbar-brand"  href="{{'../public'}}" >
+           <a class="navbar-brand"  href="/" >
            {{ HTML::image('/icon/e-materi.png'); }}
            </a>
 
