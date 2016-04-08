@@ -3,7 +3,7 @@
 
 @section('title')
     @parent
-    - Ganti Password.
+    - Aplikasi Materi Pelajaran/Kuliah Online.
 @stop
 @section('content')
  

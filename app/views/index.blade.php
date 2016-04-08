@@ -3,7 +3,7 @@
 @section('title')
     @parent
 
-    - Aplikasi Materi Pelajaran/Kuliah Online.
+    - List.
 @stop
 @section('content')
 <div class="row">
