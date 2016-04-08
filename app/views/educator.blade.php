@@ -270,11 +270,6 @@ a.zoomable {
          <?php endif; ?>  
   </div>
 </div>
-
-
- 
-
- 
 <div class="container">
   <div class=" ">
       {{Form::open(array('url'=>'list_matakuliah/' . $dosen->id,  'files'=>true))}} 

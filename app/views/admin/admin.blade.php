@@ -2,7 +2,6 @@
 
 @section('title')
     @parent
-
     - Menu Utama Administrator.
 @stop
  <style type="text/css">
@@ -24,6 +23,10 @@
          <?php endif; ?>  
   </div>
 </div>
+
+
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
 
 
   <div class="row"></div>
@@ -88,13 +91,8 @@
 
         {{-- Modal --}}
 <!-- Modal -->
-
 @endforeach
-
-
-
-
-
 
 </table>
     @endsection
+

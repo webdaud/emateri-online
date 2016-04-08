@@ -2,12 +2,10 @@
 
 @section('title')
     @parent
-
-    - Login Untuk Dosen/Administrator.
+    - Login
 @stop
 
 @section('content')
-
 
 <div class="row">
 <?php if(Session::has('register_error')): ?>
@@ -20,7 +18,6 @@
       
   </div>
 </div>
-
 <div class="row">
 </div>
  <!-- Konten kiri --> 
@@ -34,16 +31,13 @@
 {{Form::open(array('action' => 'HomeController@Login')) }} 
 
 		<h2>Login</h2>
-
 		<!-- Bila  ada error, maka muncul ini -->
 		<p>
-	
 		</p>
 <h1></h1>
 		<p>
 			{{Form::text('username', '', array('placeholder' => 'Masukkan Username', 'class' => 'form-control')) }}
 		</p>
-
 		<p>
 			{{Form::password('password', array('placeholder' => 'Password', 'class' => 'form-control')) }}
 		</p>
@@ -51,10 +45,8 @@
 		<p>{{Form::submit('Login', array('class' => 'btn btn-lg btn-primary btn-block')) }}</p>
 	{{ Form::close() }}
 <a href="daftar" class="btn btn-lg btn-default btn-block">Daftar</a>
-
   </div>
    <!-- Konten dikanan --> 
   <div class="col-md-4"></div>
 </div>
-
-	@endsection
+@endsection

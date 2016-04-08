@@ -133,6 +133,5 @@
         "Illuminate\\Database\\SeedServiceProvider": [],
         "Illuminate\\Translation\\TranslationServiceProvider": [],
         "Illuminate\\Validation\\ValidationServiceProvider": []
-        
     }
 }

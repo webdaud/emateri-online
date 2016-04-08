@@ -16,7 +16,6 @@
         {{ HTML::style('css/bootstrap-theme.css') }}
 
  
-
         <style>
         @section('styles')
             body {

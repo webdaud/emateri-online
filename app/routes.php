@@ -17,6 +17,10 @@
 //Cari 
 	Route::post('/cari', ['as'=>'cari', 'uses' => 'HomeController@cari']);
 
+//About 
+	Route::get('/about', ['as'=>'about', 'uses' => 'HomeController@about']);
+
+
 //List Materi
 	Route::get('/listmateri', ['as'=>'listmateri', 'uses' => 'HomeController@listmateri']);
 

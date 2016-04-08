@@ -98,7 +98,7 @@
  <!-- Bila Tamu   -->
              @if (Auth::guest())
                     <li><a href="/login"><b class="glyphicon glyphicon-user"></b> Login</a></li>
-                    <li><a href=""><b class="glyphicon glyphicon-globe"></b> Tentang</a></li>
+                    <li><a href="/about"><b class="glyphicon glyphicon-globe"></b> Tentang</a></li>
 
 
 

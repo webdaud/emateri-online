@@ -31,6 +31,15 @@ class HomeController extends BaseController {
 		->with('pengajar', $pengajar);
  
 	}
+
+//halaman awal
+	public function about()
+	{
+		
+ 		
+		return View::make('/about');
+ 
+	}	
 	
 //List Materi
 	public function listmateri()

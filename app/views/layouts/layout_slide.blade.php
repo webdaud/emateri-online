@@ -18,66 +18,15 @@
         <style>
         @section('styles')
             body {
-                padding-top: 30px;
+                padding-top: 50px;
                 background-image: url({{ URL::asset('img/bg.jpg'); }}); 
                 background-size: cover;
-               
-            }
+                  }
         @show
         </style>
     </head>
-
 <body>
        
-
-div class="row">
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-  <!-- Overlay -->
-  <div class="overlay"></div>
-
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-  </ol>
-  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1"></div>
-      <div class="hero">
-        
-         
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-2"></div>
-      <div class="hero">        
-        <hgroup>
-            
-        </hgroup>       
-        
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-3"></div>
-      <div class="hero">        
-        <hgroup>
-            
-        </hgroup>
-        
-      </div>
-    </div>
-  </div> 
-</div>
-</div>        
-
-
-
-
-
-
 
          <!-- Menu Utama -->  
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -90,21 +39,17 @@ div class="row">
             <span class="icon-bar"></span>
           </button>
  <!-- Menu sebelah kanan -->
-
            <a class="navbar-brand"  href="/" >
             {{ HTML::image('/icon/e-materi.png'); }}
           </a>
-
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-
-
  <!-- Menu sebelah kanan -->
  <!-- Bila Tamu   -->
              @if (Auth::guest())
                     <li><a href="/login"><b class="glyphicon glyphicon-user"></b> Login</a></li>
-                    <li><a href=""><b class="glyphicon glyphicon-globe"></b> Tentang</a></li>
+                    <li><a href="/about"><b class="glyphicon glyphicon-globe"></b> Tentang</a></li>
 
 
 

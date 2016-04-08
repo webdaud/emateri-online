@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Elasticsearch\\' => array($vendorDir . '/elasticsearch/elasticsearch/src/Elasticsearch'),
     'Codesleeve\\Stapler\\' => array($vendorDir . '/codesleeve/stapler/src'),
 );

@@ -6,7 +6,8 @@
 @stop
 @section('content')
 {{ HTML::script ('js/validator.min.js') }}
-  <!-- Registrasi Gagal -->
+
+<!-- Registrasi Gagal -->
 <div class="row">
 <?php if(Session::has('register_gagal')): ?>
   <div class="col-xs-6 col-sm-4"></div>
@@ -22,6 +23,7 @@
   <div>
     <h3>Registrasi Pengguna</h3>
   </div>
+
 <!-- Form Daftar -->
 <div class="row">
   <div class="col-md-9 col-md-push-3">
@@ -52,32 +54,31 @@
             </div>
 
             <div class="row">
-
               <div class="form-group col-xs-3">
-               
-              <label for="tipe_user">Anda Mendaftar Sebagai ?</label>
-              <select name="tipe_user" id="tipe_user" class="form-control input-lg">
-              
+               <label for="tipe_user">Anda Mendaftar Sebagai ?</label>
+              <select name="tipe_user" id="tipe_user" class="form-control input">
               <option>Pelajar/Mahasiswa</option>
               <option>Guru/Dosen</option>
             </select>
-
             </div> 
             </div>  
-            
+
             <div class="row">
               <div class="col-xs-2">
-                  {{HTML::image(Captcha::img(), '', array('placeholder' => 'Masukkan Username', 'class' => 'form-control input-lg')) }}
+                  {{HTML::image(Captcha::img(), '', array( )) }}
               </div>
-              <div class="form-group">
-              <div class="col-xs-3">
-              <input type="text" name="captcha" class="form-control input-lg" placeholder="Verifikasi Gambar" required>
+            </div>
+
+            <div class="row">
+            <div class="col-xs-3">
+              <input type="text" name="captcha" class="form-control input" placeholder="Verifikasi Gambar" required>
               <div class="help-block with-errors"></div>
               </div>
-            </div>
-            </div>
-            <p>&nbsp;</p>
+              </div>
+              
             <input type="submit" class="btn btn-primary" value="Daftar">
+            </div>
+           
         </form>
   </div>
   </div>
