@@ -25,9 +25,7 @@ return array(
 	| you may use many connections at once using the Database library.
 	|
 	*/
-
 	'default' => 'mysql',
-
 	/*
 	|--------------------------------------------------------------------------
 	| Database Connections
@@ -54,9 +52,9 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'mysql.idhostinger.com',
-			'database'  => 'u377812221_emat',
-			'username'  => 'u377812221_daud',
+			'host'      => 'localhost',
+			'database'  => 'e-materi',
+			'username'  => 'daud',
 			'password'  => 'hamonangan',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
